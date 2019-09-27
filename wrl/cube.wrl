@@ -1,0 +1,42 @@
+#VRML V1.0 ascii
+
+Separator {
+    renderCaching	OFF
+    renderCulling	OFF
+    Callback {
+    }
+
+    ShapeHints {
+	vertexOrdering	COUNTERCLOCKWISE
+	faceType	CONVEX
+    }
+    Separator {
+	renderCulling	OFF
+	Material {
+	    diffuseColor	0 0 1
+	}
+	Separator {
+	    renderCulling	OFF
+	    Coordinate3 {
+		point	[ 
+			-1.0	-1.0	1.0,
+			-1.0	 1.0	1.0,
+			 1.0	 1.0	1.0,
+			 1.0	-1.0	1.0,
+			-1.0	-1.0	-1.0,
+			-1.0	 1.0	-1.0,
+			 1.0	 1.0	-1.0,
+			 1.0	-1.0	-1.0 ]
+	    }
+	   IndexedFaceSet {
+		coordIndex	[ 0, 1, 2, 3, -1,
+				  4, 5, 1, 0, -1,
+				  2, 1, 5, 6, -1,
+				  2, 6, 7, 3, -1,
+				  0, 3, 7, 4, -1,
+				  7, 6, 5, 4, -1 ] 
+	    }
+	}
+    }
+
+}
